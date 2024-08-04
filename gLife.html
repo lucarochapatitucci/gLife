@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <link rel="stylesheet" href="gLife.css" type = "text/css">
+    <title> Game of Life </title>
+  </head>
+  <body>
+    <div class="altera">
+      <button onclick="createRandomCells();">Random</button>
+      <p></p>
+      <!-- <button onclick="debug()">debug</button> -->
+      <button onclick="createBlank()">Sandbox</button>
+      <p></p>
+      <button id = "prox" onclick= "nextGen()" style="display: none">Next generation</button>
+      <p></p>
+      <button id = "play" onclick = "autom()" style="display: none">Play</button>
+      <button id = "stop" onclick="pause()" style="display: none">Pause</button>
+      <input type="number" id = "vel" value="240">
+    </div>
+    <canvas onclick="godHand()" id="canvas" width="1500" height="1000" style="display: block" ></canvas>
+  </body>
+  <script src="gLife.js" charset="utf-8"></script>
+</html>
